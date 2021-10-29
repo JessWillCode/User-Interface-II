@@ -117,6 +117,7 @@ h2 {
 
 .projects img{
     width:24%;
+    margin-left:1%;
 }
 
 .text {
@@ -136,13 +137,18 @@ footer {
     margin-top:1%;
 }
 
-.footerlink a{
+.footerlink {
+    padding:.5%;
     display:flex;
+    justify-content:center;
+    border:1px solid #4f4f4f;
+    padding-left:1%;
+    padding-right:1%;
+}
+
+.footerlink a{
     text-decoration:none;
     font-weight:bold;
     color:#fff;
     font-size:1.6rem;
-    border:1px solid #4f4f4f;
-    margin:3% 0;
-
 }
