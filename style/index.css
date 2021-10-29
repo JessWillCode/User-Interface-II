@@ -53,7 +53,7 @@ h1 {
     color:rgb(141, 70, 141);
 }
 
-a {
+.links a {
     text-decoration:none;
     font-weight:bold;
     color:#fff;
@@ -92,14 +92,57 @@ h2 {
 
 .image {
     width:100%;
-    height:60vh;
+    height:100vh;
     background-image: url('/Photos/officepic.JPG');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+    margin-bottom:1%;
 }
 
-.middle {
+.pictext {
     display:flex;
-    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    
+}
+
+.projects {
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    height:60vh;
+}
+
+.projects img{
+    width:24%;
+}
+
+.text {
+    display:flex;
+    text-align:center;
+    width:20%;
+    margin-left:5%;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:15vh;
+    background-color:rgb(167, 116, 167);
+    margin-top:1%;
+}
+
+.footerlink a{
+    display:flex;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+    font-size:1.6rem;
+    border:1px solid #4f4f4f;
+    margin:3% 0;
+
 }
