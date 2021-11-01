@@ -199,6 +199,37 @@ footer {
     /* Middle Section Styles */
 
     .image {
-        
+        width:90%;
+        height:60vh;
+        margin:auto;
+        margin-bottom: 6%;
+    }
+
+    .pictext {
+        width:100%;
+        height:100vh;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    
+    .projects {
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    
+    .projects img {
+        width: 45%;
+        margin:2%;
+        height:40vh
+    }
+
+    .text {
+        margin-top: 35%;
+        margin-bottom: 2%;
+    }
+
+    .footerlink a{
+        font-size:1.8rem;
     }
 }
