@@ -162,6 +162,12 @@ footer {
     .text {
      margin-right: 5%;
  }
+ .image {
+    width:90%;
+    height:60vh;
+    margin:auto;
+    margin-bottom: 6%;
+}
 }
 
 /*Tablet Queries close here*/
