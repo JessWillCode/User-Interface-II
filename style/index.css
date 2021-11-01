@@ -156,12 +156,49 @@ footer {
     border:1px solid #4f4f4f;
 }
 
-/* Media Queries Here*/
+/* Tablet Media Queries Here*/
 
 @media(max-width:800px) {
-
+    .text {
+     margin-right: 5%;
+ }
 }
 
+/*Tablet Queries close here*/
+
+/*Mobile Media Queries here*/
+
 @media (max-width:500px) {
+   /* Top Section Styles */
+    h1 {
+        font-size:4rem;
+    }
     
+    .links {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+
+    .links a {
+        padding-left:1%;
+        text-align: center;
+        width:20%;
+        margin:0;
+    }
+
+    h2 {
+        font-size:3rem;
+    }
+    
+    .toptext {
+        text-align: center;
+    }    
+
+    /* Middle Section Styles */
+
+    .image {
+        
+    }
 }
