@@ -1,1 +1,241 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+/*General Styles*/
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size:1.8rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    background-color: rgb(128, 216, 187);
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size:5rem;
+    font-family: 'Kaushan Script', cursive;
+    text-transform:uppercase;
+    text-align:center;
+    color:rgb(141, 70, 141);
+}
+
+.links a {
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+    font-size:1.6rem;
+    border:1px solid #4f4f4f;
+    margin:3% 0;
+    padding:1%;
+    width:10%;
+    text-align:center;
+    background-color:rgb(167, 116, 167);
+}
+
+.links {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+h2 {
+    font-size:4rem;
+    color:rgb(141, 70, 141);
+    text-transform:uppercase;
+    font-family: 'Kaushan Script', cursive;
+    padding:1%;
+    text-align:center;
+ }
+
+.toptext {
+    margin:0 10%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    padding:3%;
+}
+
+.image {
+    width:100%;
+    height:100vh;
+    background-image: url('/Photos/officepic.JPG');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:1%;
+}
+
+.pictext {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    
+}
+
+.projects {
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    height:60vh;
+}
+
+.projects img{
+    width:24%;
+    margin-left:1%;
+}
+
+.text {
+    display:flex;
+    text-align:center;
+    width:20%;
+    margin-left:5%;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:15vh;
+    background-color:rgb(167, 116, 167);
+    margin-top:1%;
+}
+
+.footerlink {
+    padding:.5%;
+    display:flex;
+    justify-content:center;
+    padding-left:1%;
+    padding-right:1%;
+}
+
+.footerlink a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+    font-size:1.6rem;
+    border:1px solid #4f4f4f;
+}
+
+/* Tablet Media Queries Here*/
+
+@media(max-width:800px) {
+    .text {
+     margin-right: 5%;
+ }
+ .image {
+    width:90%;
+    height:60vh;
+    margin:auto;
+    margin-bottom: 6%;
+}
+}
+
+/*Tablet Queries close here*/
+
+/*Mobile Media Queries here*/
+
+@media (max-width:500px) {
+   /* Top Section Styles */
+    h1 {
+        font-size:4rem;
+    }
+    
+    .links {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+
+    .links a {
+        padding-left:1%;
+        text-align: center;
+        width:20%;
+        margin:0;
+    }
+
+    h2 {
+        font-size:3rem;
+    }
+    
+    .toptext {
+        text-align: center;
+    }    
+
+    /* Middle Section Styles */
+
+    .image {
+        width:90%;
+        height:60vh;
+        margin:auto;
+        margin-bottom: 6%;
+    }
+
+    .pictext {
+        width:100%;
+        height:100vh;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    
+    .projects {
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    
+    .projects img {
+        width: 45%;
+        margin:2%;
+        height:40vh
+    }
+
+    .text {
+        margin-top: 40%;
+        margin-bottom: 2%;
+    }
+
+    .footerlink a{
+        font-size:1.8rem;
+    }
+}
